@@ -36,6 +36,22 @@ Install this via pip (or your favourite package manager):
 
 `pip install netlify-builds`
 
+## Usage
+
+Create a `.netlify-builds.json` in your home directory with the following shape:
+
+```json
+{
+  "team-name-1": "access-token-1",
+  "team-name-2": "access-token-2",
+  ...
+}
+```
+
+To obtain the token for each team, open a private browsing session and login to your team dashboard and copy it from the local storage, it should be located under the key `nf-session`. 
+
+DO NOT LOG OUT. Instead, simply close the private browsing session. If you log out, the token will be invalidated.
+
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
