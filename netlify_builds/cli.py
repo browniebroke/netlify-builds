@@ -12,11 +12,6 @@ from rich.table import Table
 console = Console()
 
 
-def read_config():
-    config_file = Path.home() / ".netlify-builds.json"
-    return json.loads(config_file.read_text())
-
-
 def main():
     asyncio.run(run_async())
 
@@ -37,6 +32,11 @@ async def run_async():
             print_table(rows)
         else:
             console.print("No rows to print", style="bold red")
+
+
+def read_config():
+    config_file = Path.home() / ".netlify-builds.json"
+    return json.loads(config_file.read_text())
 
 
 async def make_request(client, team, token):
