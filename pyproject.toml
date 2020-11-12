@@ -22,7 +22,7 @@ packages = [
 "Changelog" = "https://netlify-builds.readthedocs.io/changelog.html"
 
 [tool.poetry.scripts]
-netlify-builds = "netlify_builds.main:main"
+netlify-builds = "netlify_builds.cli:main"
 
 [tool.poetry.dependencies]
 python = "^3.6"

@@ -24,7 +24,9 @@ def main():
 async def run_async():
     team_tokens = read_config()
     async with httpx.AsyncClient(timeout=3) as client:
-        tasks = [make_request(client, team, token) for team, token in team_tokens]
+        tasks = [
+            make_request(client, team, token) for team, token in team_tokens.items()
+        ]
         team_responses = await asyncio.gather(*tasks)
         rows = [
             parse_response(team, response_data)
