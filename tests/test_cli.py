@@ -31,4 +31,3 @@ def test_parse_response():
         dt.datetime(2019, 10, 15, 0, 0, tzinfo=tzoffset(None, -25200)),
         dt.datetime(2019, 11, 15, 0, 0, tzinfo=tzoffset(None, -25200)),
     )
-    assert 1270 <= parsed_response[-1] <= 1280
