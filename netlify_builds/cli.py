@@ -28,10 +28,7 @@ async def run_async():
             for team, response_data in team_responses
             if response_data
         ]
-        if rows:
-            print_table(rows)
-        else:
-            console.print("No rows to print", style="bold red")
+        print_table(rows)
 
 
 def read_config():
@@ -64,6 +61,10 @@ def parse_response(team, response_data):
 
 
 def print_table(rows):
+    if not rows:
+        console.print("No rows to print", style="bold red")
+        return
+
     table = Table(show_header=True, header_style="bold blue")
     table.add_column("Team", style="bold yellow")
     table.add_column("Mins", style="dim", justify="right")
@@ -85,7 +86,3 @@ def print_table(rows):
         )
 
     console.print(table)
-
-
-if __name__ == "__main__":
-    main()
