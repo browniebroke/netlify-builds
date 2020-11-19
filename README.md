@@ -32,11 +32,11 @@ A command line utility to check build usage across multiple Netlify accounts
 
 ## Installation
 
-Install this via pip (or your favourite package manager):
+Recommended to install this via [pipx]:
 
-`pip install netlify-builds`
+`pipx install netlify-builds`
 
-## Usage
+## Setup
 
 Create a `.netlify-builds.json` in your home directory with the following shape:
 
@@ -48,13 +48,30 @@ Create a `.netlify-builds.json` in your home directory with the following shape:
 }
 ```
 
-To obtain the token for each team, open a private browsing session and login to your team dashboard and copy it from the local storage, it should be located under the key `nf-session`. 
+To obtain the token for each team, open a private browsing session and login to your team dashboard and copy it from the local storage, it should be located under the key `nf-session`.
 
 DO NOT LOG OUT. Instead, simply close the private browsing session. If you log out, the token will be invalidated.
 
+## Profit
+
+You're good to go, check all your accounts from the comfort of your terminal:
+
+```
+➜ netlify-builds
+┏━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━┓
+┃ Team              ┃     Mins ┃ Start Date ┃ End Date   ┃ Elapsed ┃  Used ┃
+┡━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━╇━━━━━━━┩
+│ team-blue         │   5 mins │ 2020-11-16 │ 2020-12-16 │   11.6% │  1.7% │
+│ team-red          │ 182 mins │ 2020-10-27 │ 2020-11-27 │   75.9% │ 60.7% │
+│ team-green        │  46 mins │ 2020-11-02 │ 2020-12-02 │   58.3% │ 15.3% │
+└───────────────────┴──────────┴────────────┴────────────┴─────────┴───────┘
+```
+
+If you're likely to exceed the free quota (300 mins) the rows will appear in red, otherwise in green.
+
 ## Contributors ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+Thanks goes to these wonderful people ([emoji key]):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
@@ -63,11 +80,14 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+This project follows the [all-contributors] specification. Contributions of any kind welcome!
 
 ## Credits
 
-This package was created with
-[Cookiecutter](https://github.com/audreyr/cookiecutter) and the
-[browniebroke/cookiecutter-pypackage](https://github.com/browniebroke/cookiecutter-pypackage)
-project template.
+This package was created with [Cookiecutter] and the [browniebroke/cookiecutter-pypackage][bb-cc-pypkg] project template.
+
+[pipx]: https://pipxproject.github.io/pipx/
+[emoji key]: https://allcontributors.org/docs/en/emoji-key
+[all-contributors]: https://github.com/all-contributors/all-contributors
+[cookiecutter]: https://github.com/audreyr/cookiecutter
+[bb-cc-pypkg]: https://github.com/browniebroke/cookiecutter-pypackage
