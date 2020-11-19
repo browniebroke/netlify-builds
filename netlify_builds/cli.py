@@ -42,6 +42,7 @@ async def make_request(client, team, token):
             f"https://api.netlify.com/api/v1/{team}/builds/status",
             headers={"content-length": "0", "authorization": f"Bearer {token}"},
         )
+        response.raise_for_status()
     except HTTPError:
         return team, None
     return team, response.json()
