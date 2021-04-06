@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "netlify-builds"
-version = "0.1.2"
+version = "0.1.3"
 description = "A command line utility to check build usage across multiple Netlify accounts"
 authors = ["Bruno Alla <alla.brunoo@gmail.com>"]
 license = "MIT"
