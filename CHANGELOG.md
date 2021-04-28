@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.4 (2021-04-28)
+### Fix
+* **deps:** Update httpx-respx ([`47476b7`](https://github.com/browniebroke/netlify-builds/commit/47476b705285b0469774be8293ba576099ae202d))
+
 ## v0.1.3 (2021-04-06)
 ### Fix
 * Release in a separate GH environment ([`df53884`](https://github.com/browniebroke/netlify-builds/commit/df538845d3018d83ace4247ca62d485b7fb94e59))
