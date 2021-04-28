@@ -1,5 +1,14 @@
 {
   "extends": [
     "github>browniebroke/renovate-configs"
+  ],
+  "packageRules": [
+    {
+      "matchPackageNames": [
+          "httpx",
+          "respx"
+      ],
+      "groupName": "httpx-respx"
+    }
   ]
 }
