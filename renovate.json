@@ -5,8 +5,8 @@
   "packageRules": [
     {
       "matchPackageNames": [
-          "httpx",
-          "respx"
+        "httpx",
+        "respx"
       ],
       "groupName": "httpx-respx"
     }
