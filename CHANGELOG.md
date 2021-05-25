@@ -2,10 +2,6 @@
 
 <!--next-version-placeholder-->
 
-## v0.1.5 (2021-05-25)
-### Fix
-* Parse total build minutes ([`07f0885`](https://github.com/browniebroke/netlify-builds/commit/07f088562b1d5b3ac639ca1458feed15c285020b))
-
 ## v0.1.4 (2021-04-28)
 ### Fix
 * **deps:** Update httpx-respx ([`47476b7`](https://github.com/browniebroke/netlify-builds/commit/47476b705285b0469774be8293ba576099ae202d))
