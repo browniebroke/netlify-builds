@@ -53,12 +53,13 @@ def parse_response(team, response_data):
     start_date = parse(minutes["period_start_date"])
     end_date = parse(minutes["period_end_date"])
     used = minutes["current"]
+    total = minutes["included_minutes"]
     percent_elapsed = (
         100
         * (dt.datetime.now(tz=start_date.tzinfo) - start_date)
         / (end_date - start_date)
     )
-    return team, used, start_date, end_date, percent_elapsed
+    return team, used, total, start_date, end_date, percent_elapsed
 
 
 def print_table(rows):
@@ -74,8 +75,8 @@ def print_table(rows):
     table.add_column("Elapsed", justify="right")
     table.add_column("Used", justify="right")
 
-    for team, used, start_date, end_date, percent_elapsed in rows:
-        percent_used = 100 * used / 300
+    for team, used, total, start_date, end_date, percent_elapsed in rows:
+        percent_used = 100 * used / total
         style = "red" if percent_used > percent_elapsed else "green"
         table.add_row(
             team,
