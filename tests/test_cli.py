@@ -8,6 +8,7 @@ from dateutil.tz import tzoffset
 from rich.table import Table
 
 from netlify_builds.cli import (
+    BuildRow,
     main,
     make_request,
     parse_response,
@@ -84,16 +85,18 @@ def dummy_response_data():
 
 @time_machine.travel("2019-11-01 10:00")
 def test_parse_response(dummy_response_data):
-    team, used, total, start_date, end_date, percent_elapsed = parse_response(
-        "example", dummy_response_data
-    )
+    build_row = parse_response("example", dummy_response_data)
 
-    assert team == "example"
-    assert used == 49
-    assert total == 300
-    assert start_date == dt.datetime(2019, 10, 15, 0, 0, tzinfo=tzoffset(None, -25200))
-    assert end_date == dt.datetime(2019, 11, 15, 0, 0, tzinfo=tzoffset(None, -25200))
-    assert int(percent_elapsed) == 55
+    assert build_row.team == "example"
+    assert build_row.used == 49
+    assert build_row.total == 300
+    assert build_row.start_date == dt.datetime(
+        2019, 10, 15, 0, 0, tzinfo=tzoffset(None, -25200)
+    )
+    assert build_row.end_date == dt.datetime(
+        2019, 11, 15, 0, 0, tzinfo=tzoffset(None, -25200)
+    )
+    assert int(build_row.percent_elapsed) == 55
 
 
 @pytest.fixture
@@ -110,15 +113,20 @@ def test_print_table_no_rows(console_print):
 def test_print_table_with_rows(console_print):
     print_table(
         [
-            (
-                "a-team",
-                30,
-                300,
-                dt.datetime(2019, 10, 15),
-                dt.datetime(2019, 11, 15),
-                70,
+            BuildRow(
+                team="a-team",
+                used=30,
+                total=300,
+                start_date=dt.datetime(2019, 10, 15),
+                end_date=dt.datetime(2019, 11, 15),
             ),
-            ("blue", 299, 300, dt.datetime(2019, 10, 3), dt.datetime(2019, 11, 3), 30),
+            BuildRow(
+                team="blue",
+                used=299,
+                total=300,
+                start_date=dt.datetime(2019, 10, 3),
+                end_date=dt.datetime(2019, 11, 3),
+            ),
         ]
     )
 

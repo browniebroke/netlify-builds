@@ -2,6 +2,7 @@ import asyncio
 import datetime as dt
 import json
 from pathlib import Path
+from typing import Any, Dict, List, NamedTuple
 
 import httpx
 from dateutil.parser import parse
@@ -10,6 +11,26 @@ from rich.console import Console
 from rich.table import Table
 
 console = Console()
+
+
+class BuildRow(NamedTuple):
+    team: str
+    used: int
+    total: int
+    start_date: dt.datetime
+    end_date: dt.datetime
+
+    @property
+    def percent_used(self) -> float:
+        return 100 * self.used / self.total
+
+    @property
+    def percent_elapsed(self) -> float:
+        return (
+            100
+            * (dt.datetime.now(tz=self.start_date.tzinfo) - self.start_date)
+            / (self.end_date - self.start_date)
+        )
 
 
 def main():
@@ -48,21 +69,22 @@ async def make_request(client, team, token):
     return team, response.json()
 
 
-def parse_response(team, response_data):
+def parse_response(team: str, response_data: Dict[str, Any]) -> BuildRow:
     minutes = response_data["minutes"]
     start_date = parse(minutes["period_start_date"])
     end_date = parse(minutes["period_end_date"])
     used = minutes["current"]
     total = minutes["included_minutes"]
-    percent_elapsed = (
-        100
-        * (dt.datetime.now(tz=start_date.tzinfo) - start_date)
-        / (end_date - start_date)
+    return BuildRow(
+        team=team,
+        used=used,
+        total=total,
+        start_date=start_date,
+        end_date=end_date,
     )
-    return team, used, total, start_date, end_date, percent_elapsed
 
 
-def print_table(rows):
+def print_table(rows: List[BuildRow]):
     if not rows:
         console.print("No rows to print", style="bold red")
         return
@@ -75,16 +97,15 @@ def print_table(rows):
     table.add_column("Elapsed", justify="right")
     table.add_column("Used", justify="right")
 
-    for team, used, total, start_date, end_date, percent_elapsed in rows:
-        percent_used = 100 * used / total
-        style = "red" if percent_used > percent_elapsed else "green"
+    for build_row in rows:
+        style = "red" if build_row.percent_used > build_row.percent_elapsed else "green"
         table.add_row(
-            team,
-            f"{used} mins",
-            f"{start_date:%Y-%m-%d}",
-            f"{end_date:%Y-%m-%d}",
-            f"[{style}]{percent_elapsed:.1f}%[/{style}]",
-            f"[{style}]{percent_used:.1f}%[/{style}]",
+            build_row.team,
+            f"{build_row.used} mins",
+            f"{build_row.start_date:%Y-%m-%d}",
+            f"{build_row.end_date:%Y-%m-%d}",
+            f"[{style}]{build_row.percent_elapsed:.1f}%[/{style}]",
+            f"[{style}]{build_row.percent_used:.1f}%[/{style}]",
         )
 
     console.print(table)
