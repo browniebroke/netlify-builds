@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.6 (2021-05-26)
+### Fix
+* Back to offical PSR ([`1398566`](https://github.com/browniebroke/netlify-builds/commit/139856646307b9bb137a74f37f046809b542e05b))
+
 ## v0.1.5 (2021-05-25)
 ### Fix
 * Revert failed release 0.1.5 ([`fa79deb`](https://github.com/browniebroke/netlify-builds/commit/fa79deb829b1d568b26310e4f5f923c2fcba5f13))
