@@ -43,10 +43,6 @@ respx = "^0.17.0"
 time-machine = "^2.0.0"
 tox = "^3.20.1"
 
-[build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
-
 [tool.semantic_release]
 branch = "main"
 version_toml = "pyproject.toml:tool.poetry.version"
@@ -59,3 +55,7 @@ addopts = "-v -Wdefault --cov=netlify_builds"
 [tool.isort]
 profile = "black"
 known_first_party = ["netlify_builds", "tests"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
