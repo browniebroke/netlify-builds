@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.7 (2021-08-19)
+### Fix
+* **deps:** Update dependency httpx to ^0.19.0 ([`0693d25`](https://github.com/browniebroke/netlify-builds/commit/0693d25ea68d298db63113a09ab958e872656f2a))
+
 ## v0.1.6 (2021-05-26)
 ### Fix
 * Back to offical PSR ([`1398566`](https://github.com/browniebroke/netlify-builds/commit/139856646307b9bb137a74f37f046809b542e05b))
