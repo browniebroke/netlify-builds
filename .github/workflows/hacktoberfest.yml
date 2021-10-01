@@ -1,14 +1,12 @@
 name: Hacktoberfest
 
 on:
-  schedule:
-    - cron: "0 0 * 10 *"
   workflow_dispatch:
-    inputs:
-      revert:
-        description: "If true label will be removed"
-        required: true
-        default: "0"
+  schedule:
+    # Run every day in October
+    - cron: "0 0 * 10 *"
+    # Run on the 1st of November to revert
+    - cron: "0 13 1 11 *"
 
 jobs:
   example:
@@ -17,5 +15,4 @@ jobs:
     steps:
       - uses: browniebroke/hacktoberfest-labeler-action@v2.2.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          revert: ${{ github.event.inputs.revert }}
+          github_token: ${{ secrets.GH_PAT }}
