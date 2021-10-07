@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.2.0 (2021-10-07)
+### Feature
+* Add support for Python 3.10 ([`9dec7e7`](https://github.com/browniebroke/netlify-builds/commit/9dec7e73bd758b0491a399f024eb70663c5faf93))
+
 ## v0.1.7 (2021-08-19)
 ### Fix
 * **deps:** Update dependency httpx to ^0.19.0 ([`0693d25`](https://github.com/browniebroke/netlify-builds/commit/0693d25ea68d298db63113a09ab958e872656f2a))
