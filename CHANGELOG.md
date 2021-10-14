@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.2.1 (2021-10-14)
+### Fix
+* **deps:** Update httpx and respx ([`27aa596`](https://github.com/browniebroke/netlify-builds/commit/27aa59675093bd5bf1a589a44f658b74410a6d5b))
+
 ## v0.2.0 (2021-10-07)
 ### Feature
 * Add support for Python 3.10 ([`9dec7e7`](https://github.com/browniebroke/netlify-builds/commit/9dec7e73bd758b0491a399f024eb70663c5faf93))
