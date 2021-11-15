@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.2.2 (2021-11-15)
+### Fix
+* **deps:** Update httpx and respx ([`116764c`](https://github.com/browniebroke/netlify-builds/commit/116764c7196d87702809ab6e515ae10faca97f46))
+
 ## v0.2.1 (2021-10-14)
 ### Fix
 * **deps:** Update httpx and respx ([`27aa596`](https://github.com/browniebroke/netlify-builds/commit/27aa59675093bd5bf1a589a44f658b74410a6d5b))
