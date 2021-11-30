@@ -7,6 +7,9 @@
   <a href="https://codecov.io/gh/browniebroke/netlify-builds">
     <img src="https://img.shields.io/codecov/c/github/browniebroke/netlify-builds.svg?logo=codecov&logoColor=fff&style=flat-square" alt="Test coverage percentage">
   </a>
+  <a href="https://results.pre-commit.ci/latest/github/browniebroke/netlify-builds/main">
+    <img src="https://results.pre-commit.ci/badge/github/browniebroke/netlify-builds/main.svg" alt="pre-commit.ci status">
+  </a>
 </p>
 <p align="center">
   <a href="https://python-poetry.org/">
