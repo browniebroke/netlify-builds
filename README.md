@@ -27,7 +27,6 @@
   <img src="https://img.shields.io/pypi/l/netlify-builds.svg?style=flat-square" alt="License">
 </p>
 
-
 A command line utility to check build usage across multiple Netlify accounts
 
 ## Installation
