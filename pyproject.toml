@@ -14,7 +14,7 @@ classifiers = [
     "Topic :: Software Development :: Libraries",
 ]
 packages = [
-    { include = "netlify_builds" },
+    { include = "netlify_builds", from = "src" },
 ]
 
 [tool.poetry.urls]
@@ -42,15 +42,17 @@ pyupgrade = "^2.7.4"
 respx = "^0.19.0"
 time-machine = "^2.0.0"
 tox = "^3.20.1"
+pytest-srcpaths = "^1.2.1"
 
 [tool.semantic_release]
 branch = "main"
 version_toml = "pyproject.toml:tool.poetry.version"
-version_variable = "netlify_builds/__init__.py:__version__"
+version_variable = "src/netlify_builds/__init__.py:__version__"
 build_command = "pip install poetry && poetry build"
 
 [tool.pytest.ini_options]
 addopts = "-v -Wdefault --cov=netlify_builds"
+pythonpath = ["src"]
 
 [tool.isort]
 profile = "black"
