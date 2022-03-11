@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.2.5 (2022-03-11)
+### Fix
+* **deps:** Update dependency rich to v12 ([`bdae005`](https://github.com/browniebroke/netlify-builds/commit/bdae0056fed231c5c636b67355dc0bf4cbccd899))
+
 ## v0.2.4 (2022-01-26)
 ### Fix
 * **deps:** Update dependency httpx to ^0.22.0 ([`4ca39a6`](https://github.com/browniebroke/netlify-builds/commit/4ca39a68c7481dc3928f5071698f8412457fb6db))
