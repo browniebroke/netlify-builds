@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.2.7 (2022-06-06)
+### Fix
+* **deps:** Revert PSR upgrade ([`242343d`](https://github.com/browniebroke/netlify-builds/commit/242343d4f2f4ffa33b662411472cfdf0870eaf96))
+
 ## v0.2.6 (2022-05-23)
 ### Fix
 * **deps:** Update dependency httpx to ^0.23.0 ([`6f53a7e`](https://github.com/browniebroke/netlify-builds/commit/6f53a7edad16cc0505d4763c761f9d3978ffcccf))
