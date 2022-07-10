@@ -1,6 +1,3 @@
 {
-  "extends": [
-    "github>browniebroke/renovate-configs",
-    "github>browniebroke/renovate-configs:httpx"
-  ]
+  "extends": ["github>browniebroke/renovate-configs:python"]
 }
