@@ -45,8 +45,9 @@ version_variable = "src/netlify_builds/__init__.py:__version__"
 build_command = "pip install poetry && poetry build"
 
 [tool.pytest.ini_options]
-addopts = "-v -Wdefault --cov=netlify_builds"
+addopts = "-v -Wdefault --cov=src"
 pythonpath = ["src"]
+asyncio_mode = "auto"
 
 [tool.isort]
 profile = "black"
