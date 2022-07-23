@@ -32,7 +32,7 @@ rich = "<13"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.0"
-pytest-asyncio = "^0.18.0"
+pytest-asyncio = "^0.19.0"
 pytest-cov = "^3.0"
 pytest-mock = "^3.3"
 respx = "^0.19.0"
@@ -45,8 +45,9 @@ version_variable = "src/netlify_builds/__init__.py:__version__"
 build_command = "pip install poetry && poetry build"
 
 [tool.pytest.ini_options]
-addopts = "-v -Wdefault --cov=netlify_builds"
+addopts = "-v -Wdefault --cov=src"
 pythonpath = ["src"]
+asyncio_mode = "auto"
 
 [tool.isort]
 profile = "black"
