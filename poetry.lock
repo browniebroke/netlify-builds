@@ -293,7 +293,7 @@ six = ">=1.5"
 
 [[package]]
 name = "respx"
-version = "0.19.2"
+version = "0.20.0"
 description = "A utility for mocking out the Python HTTPX and HTTP Core libraries."
 category = "dev"
 optional = false
@@ -390,7 +390,7 @@ testing = ["func-timeout", "jaraco.itertools", "pytest (>=6)", "pytest-black (>=
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7"
-content-hash = "26749f73ac71f76f70cc04caa71b29267bc537cc16778d53a34ed0d5dca6e1d3"
+content-hash = "5bea0d33aa7332cecc67840abe35edd2d5d1c55883d2af8a1990d4fa843b5264"
 
 [metadata.files]
 anyio = [
@@ -533,8 +533,8 @@ python-dateutil = [
     {file = "python_dateutil-2.8.2-py2.py3-none-any.whl", hash = "sha256:961d03dc3453ebbc59dbdea9e4e11c5651520a876d0f4db161e8674aae935da9"},
 ]
 respx = [
-    {file = "respx-0.19.2-py2.py3-none-any.whl", hash = "sha256:417f986fec599b9cc6531e93e494b7a75d1cb7bccff9dde5b53edc51f7954494"},
-    {file = "respx-0.19.2.tar.gz", hash = "sha256:f3d210bb4de0ccc4c5afabeb87c3c1b03b3765a9c1a73eb042a07bb18ac33705"},
+    {file = "respx-0.20.0-py2.py3-none-any.whl", hash = "sha256:61e26ddf66b2b0d1bcd78c4e18a06533e50493f8c0179e5542ebfffd3ed3d0c5"},
+    {file = "respx-0.20.0.tar.gz", hash = "sha256:27ef411ca9622ae1e032c3f355506f62de5efe08c4296f64ae2c0621888e710a"},
 ]
 rfc3986 = [
     {file = "rfc3986-1.5.0-py2.py3-none-any.whl", hash = "sha256:a86d6e1f5b1dc238b218b012df0aa79409667bb209e58da56d0b94704e712a97"},
