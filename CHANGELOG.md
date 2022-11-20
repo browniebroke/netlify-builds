@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.3.0 (2022-11-20)
+### Feature
+* Officially support Python 3.11 ([#326](https://github.com/browniebroke/netlify-builds/issues/326)) ([`073ef53`](https://github.com/browniebroke/netlify-builds/commit/073ef53616f24e77bbe437dccaeb7f31079330c1))
+
 ## v0.2.7 (2022-06-06)
 ### Fix
 * **deps:** Revert PSR upgrade ([`242343d`](https://github.com/browniebroke/netlify-builds/commit/242343d4f2f4ffa33b662411472cfdf0870eaf96))
