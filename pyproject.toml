@@ -20,6 +20,8 @@ packages = [
 [tool.poetry.urls]
 "Bug Tracker" = "https://github.com/browniebroke/netlify-builds/issues"
 "Changelog" = "https://netlify-builds.readthedocs.io/changelog.html"
+"Twitter" = "https://twitter.com/_BrunoAlla"
+"Mastodon" = "https://fosstodon.org/@browniebroke"
 
 [tool.poetry.scripts]
 netlify-builds = "netlify_builds.cli:main"
