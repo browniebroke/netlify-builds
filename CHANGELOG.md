@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.3.1 (2023-01-10)
+### Fix
+* **deps:** Update dependency rich to v13 ([#355](https://github.com/browniebroke/netlify-builds/issues/355)) ([`f582f12`](https://github.com/browniebroke/netlify-builds/commit/f582f12292f36538c565326bc2751e1aafcc8aa5))
+
 ## v0.3.0 (2022-11-20)
 ### Feature
 * Officially support Python 3.11 ([#326](https://github.com/browniebroke/netlify-builds/issues/326)) ([`073ef53`](https://github.com/browniebroke/netlify-builds/commit/073ef53616f24e77bbe437dccaeb7f31079330c1))
