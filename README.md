@@ -1,7 +1,7 @@
 # Netlify Builds
 
 <p align="center">
-  <a href="https://github.com/browniebroke/netlify-builds/actions?query=workflow%3ACI">
+  <a href="https://github.com/browniebroke/netlify-builds/actions/workflows/ci.yml?query=branch%3Amain">
     <img src="https://img.shields.io/github/actions/workflow/status/browniebroke/netlify-builds/ci.yml?branch=main&label=CI&logo=github&style=flat-square" alt="CI Status" >
   </a>
   <a href="https://codecov.io/gh/browniebroke/netlify-builds">
