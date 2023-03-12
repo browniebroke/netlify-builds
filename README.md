@@ -1,8 +1,8 @@
 # Netlify Builds
 
 <p align="center">
-  <a href="https://github.com/browniebroke/netlify-builds/actions?query=workflow%3ACI">
-    <img src="https://img.shields.io/github/workflow/status/browniebroke/netlify-builds/CI/main?label=CI&logo=github&style=flat-square" alt="CI Status" >
+  <a href="https://github.com/browniebroke/netlify-builds/actions/workflows/ci.yml?query=branch%3Amain">
+    <img src="https://img.shields.io/github/actions/workflow/status/browniebroke/netlify-builds/ci.yml?branch=main&label=CI&logo=github&style=flat-square" alt="CI Status" >
   </a>
   <a href="https://codecov.io/gh/browniebroke/netlify-builds">
     <img src="https://img.shields.io/codecov/c/github/browniebroke/netlify-builds.svg?logo=codecov&logoColor=fff&style=flat-square" alt="Test coverage percentage">
