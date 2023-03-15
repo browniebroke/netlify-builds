@@ -2,6 +2,14 @@
 
 <!--next-version-placeholder-->
 
+## v0.3.2 (2023-03-15)
+### Fix
+* **deps:** Update dependency rich to v13.3.2 ([`4f4e1e5`](https://github.com/browniebroke/netlify-builds/commit/4f4e1e568f4958258c9d6975133f9affc2255641))
+
+### Documentation
+* Update link for CI badge ([#364](https://github.com/browniebroke/netlify-builds/issues/364)) ([`8765cf3`](https://github.com/browniebroke/netlify-builds/commit/8765cf397a28236103c8637083a167585d1cf2a3))
+* Update badge for CI workflow ([#363](https://github.com/browniebroke/netlify-builds/issues/363)) ([`274438f`](https://github.com/browniebroke/netlify-builds/commit/274438fec2f23cd76604a6458ae9fc166d9ccd7d))
+
 ## v0.3.1 (2023-01-10)
 ### Fix
 * **deps:** Update dependency rich to v13 ([#355](https://github.com/browniebroke/netlify-builds/issues/355)) ([`f582f12`](https://github.com/browniebroke/netlify-builds/commit/f582f12292f36538c565326bc2751e1aafcc8aa5))
