@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.3.3 (2023-03-27)
+### Fix
+* **deps:** Update dependency rich to v13.3.3 ([`6332cfa`](https://github.com/browniebroke/netlify-builds/commit/6332cfa6c8cb27bcd2063c098cc856a8054cabd0))
+
 ## v0.3.2 (2023-03-15)
 ### Fix
 * **deps:** Update dependency rich to v13.3.2 ([`4f4e1e5`](https://github.com/browniebroke/netlify-builds/commit/4f4e1e568f4958258c9d6975133f9affc2255641))
