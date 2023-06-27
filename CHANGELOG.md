@@ -2,6 +2,16 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.0 (2023-06-27)
+
+### Feature
+
+* Drop support for Python 3.7 ([`607db64`](https://github.com/browniebroke/netlify-builds/commit/607db6496b9bc7e76075b02fd0b60b27c996383d))
+
+### Breaking
+
+* Drop support for Python 3.7 as it reached EOL on June 27, 2023. More infos: https://devguide.python.org/versions/ ([`607db64`](https://github.com/browniebroke/netlify-builds/commit/607db6496b9bc7e76075b02fd0b60b27c996383d))
+
 ## v0.3.3 (2023-03-27)
 ### Fix
 * **deps:** Update dependency rich to v13.3.3 ([`6332cfa`](https://github.com/browniebroke/netlify-builds/commit/6332cfa6c8cb27bcd2063c098cc856a8054cabd0))
