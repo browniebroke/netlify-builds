@@ -3,9 +3,7 @@
   "projectOwner": "browniebroke",
   "repoType": "github",
   "repoHost": "https://github.com",
-  "files": [
-    "README.md"
-  ],
+  "files": ["README.md"],
   "imageSize": 80,
   "commit": true,
   "commitConvention": "none",
@@ -15,11 +13,7 @@
       "name": "Bruno Alla",
       "avatar_url": "https://avatars1.githubusercontent.com/u/861044?v=4",
       "profile": "https://browniebroke.com/",
-      "contributions": [
-        "code",
-        "doc",
-        "ideas"
-      ]
+      "contributions": ["code", "doc", "ideas"]
     }
   ],
   "contributorsPerLine": 7,
