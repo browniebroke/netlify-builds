@@ -14,6 +14,8 @@ console = Console()
 
 
 class BuildRow(NamedTuple):
+    """Store build data for a team."""
+
     team: str
     used: int
     total: int
@@ -22,10 +24,12 @@ class BuildRow(NamedTuple):
 
     @property
     def percent_used(self) -> float:
+        """Calculate the percentage used."""
         return 100 * self.used / self.total
 
     @property
     def percent_elapsed(self) -> float:
+        """Calculate how much time has elapsed in the billing period."""
         return (
             100
             * (dt.datetime.now(tz=self.start_date.tzinfo) - self.start_date)
@@ -34,10 +38,12 @@ class BuildRow(NamedTuple):
 
 
 def main():
+    """Entry point, start the event loop and run the main function."""
     asyncio.run(run_async())
 
 
 async def run_async():
+    """Perform requests concurrently and print results."""
     team_tokens = read_config()
     async with httpx.AsyncClient(timeout=3) as client:
         tasks = [
@@ -53,11 +59,13 @@ async def run_async():
 
 
 def read_config():
+    """Read config and return as dict."""
     config_file = Path.home() / ".netlify-builds.json"
     return json.loads(config_file.read_text())
 
 
 async def make_request(client, team, token):
+    """Perform a single request."""
     try:
         response = await client.get(
             f"https://api.netlify.com/api/v1/{team}/builds/status",
@@ -70,6 +78,7 @@ async def make_request(client, team, token):
 
 
 def parse_response(team: str, response_data: Dict[str, Any]) -> BuildRow:
+    """Parse raw response into a BuildRow object."""
     minutes = response_data["minutes"]
     start_date = parse(minutes["period_start_date"])
     end_date = parse(minutes["period_end_date"])
@@ -85,6 +94,7 @@ def parse_response(team: str, response_data: Dict[str, Any]) -> BuildRow:
 
 
 def print_table(rows: List[BuildRow]):
+    """Print the results as a table."""
     if not rows:
         console.print("No rows to print", style="bold red")
         return
