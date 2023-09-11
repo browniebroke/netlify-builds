@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.1.1 (2023-09-11)
+
+### Fix
+
+- Update dependency httpx to ^0.25.0 (#488) ([`e43b141`](https://github.com/browniebroke/netlify-builds/commit/e43b141b13bfab5538a94689c9489ff1094556b8))
+
 ## v1.1.0 (2023-08-07)
 
 ### Feature
