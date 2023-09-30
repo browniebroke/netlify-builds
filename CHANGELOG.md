@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.1.3 (2023-09-30)
+
+### Fix
+
+- Update dependency rich to v13.6.0 ([`d0b6589`](https://github.com/browniebroke/netlify-builds/commit/d0b658988ce03273b9506f60b55bd7bc9cfc210c))
+
 ## v1.1.2 (2023-09-17)
 
 ### Fix
