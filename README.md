@@ -30,6 +30,12 @@
   <img src="https://img.shields.io/pypi/l/netlify-builds.svg?style=flat-square" alt="License">
 </p>
 
+---
+
+**Source Code**: <a href="https://github.com/browniebroke/netlify-builds" target="_blank">https://github.com/browniebroke/netlify-builds</a>
+
+---
+
 A command line utility to check build usage across multiple Netlify accounts
 
 ## Installation
