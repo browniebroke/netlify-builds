@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.1.7 (2024-02-21)
+
+### Fix
+
+- Widen dependency httpx version restriction (#585) ([`1256934`](https://github.com/browniebroke/netlify-builds/commit/12569345ed37def6d6ada703b59fffd845e3f337))
+
 ## v1.1.6 (2023-12-20)
 
 ### Fix
