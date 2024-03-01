@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.1.8 (2024-03-01)
+
+### Fix
+
+- Update dependency python-dateutil to v2.9.0 (#594) ([`ee66f46`](https://github.com/browniebroke/netlify-builds/commit/ee66f4693fcb7bb66cc93013ac962d787c67a606))
+
 ## v1.1.7 (2024-02-21)
 
 ### Fix
