@@ -2,7 +2,7 @@ import asyncio
 import datetime as dt
 import json
 from pathlib import Path
-from typing import Any, Dict, List, NamedTuple
+from typing import Any, NamedTuple
 
 import httpx
 from dateutil.parser import parse
@@ -77,7 +77,7 @@ async def make_request(client, team, token):
     return team, response.json()
 
 
-def parse_response(team: str, response_data: Dict[str, Any]) -> BuildRow:
+def parse_response(team: str, response_data: dict[str, Any]) -> BuildRow:
     """Parse raw response into a BuildRow object."""
     minutes = response_data["minutes"]
     start_date = parse(minutes["period_start_date"])
@@ -93,7 +93,7 @@ def parse_response(team: str, response_data: Dict[str, Any]) -> BuildRow:
     )
 
 
-def print_table(rows: List[BuildRow]):
+def print_table(rows: list[BuildRow]):
     """Print the results as a table."""
     if not rows:
         console.print("No rows to print", style="bold red")
