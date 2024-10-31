@@ -1,56 +1,62 @@
 # CHANGELOG
 
+## v1.2.0 (2024-10-31)
+
+### Features
+
+- Drop support for python 3.8 (#748) ([`a7bdaba`](https://github.com/browniebroke/netlify-builds/commit/a7bdabaf5752aa1758215154d192dbc6d734ebba))
+
 ## v1.1.8 (2024-03-01)
 
-### Fix
+### Bug fixes
 
 - Update dependency python-dateutil to v2.9.0 (#594) ([`ee66f46`](https://github.com/browniebroke/netlify-builds/commit/ee66f4693fcb7bb66cc93013ac962d787c67a606))
 
 ## v1.1.7 (2024-02-21)
 
-### Fix
+### Bug fixes
 
 - Widen dependency httpx version restriction (#585) ([`1256934`](https://github.com/browniebroke/netlify-builds/commit/12569345ed37def6d6ada703b59fffd845e3f337))
 
 ## v1.1.6 (2023-12-20)
 
-### Fix
+### Bug fixes
 
 - Update dependency httpx to ^0.26.0 (#550) ([`93d5fbc`](https://github.com/browniebroke/netlify-builds/commit/93d5fbc9bf8cb7f7e6e9baab7af4a826c5ee4630))
 
 ## v1.1.5 (2023-11-15)
 
-### Fix
+### Bug fixes
 
 - Update dependency rich to v13.7.0 ([`b36183d`](https://github.com/browniebroke/netlify-builds/commit/b36183d81c4031f33f7c5a0036a22339f550968b))
 
 ## v1.1.4 (2023-11-03)
 
-### Fix
+### Bug fixes
 
 - Update dependency httpx to v0.25.1 (#527) ([`668611d`](https://github.com/browniebroke/netlify-builds/commit/668611dd44aa10748bef070ffe7c8f897513a008))
 
 ## v1.1.3 (2023-09-30)
 
-### Fix
+### Bug fixes
 
 - Update dependency rich to v13.6.0 ([`d0b6589`](https://github.com/browniebroke/netlify-builds/commit/d0b658988ce03273b9506f60b55bd7bc9cfc210c))
 
 ## v1.1.2 (2023-09-17)
 
-### Fix
+### Bug fixes
 
 - Update dependency rich to v13.5.3 (#495) ([`d4cd447`](https://github.com/browniebroke/netlify-builds/commit/d4cd447f804fa43444672810e53b99914a8f66fa))
 
 ## v1.1.1 (2023-09-11)
 
-### Fix
+### Bug fixes
 
 - Update dependency httpx to ^0.25.0 (#488) ([`e43b141`](https://github.com/browniebroke/netlify-builds/commit/e43b141b13bfab5538a94689c9489ff1094556b8))
 
 ## v1.1.0 (2023-08-07)
 
-### Feature
+### Features
 
 - Add official support for python 3.12 (#464) ([`360a8d7`](https://github.com/browniebroke/netlify-builds/commit/360a8d7634b2b9a6e021310abe60ecd08d4924d2))
 
