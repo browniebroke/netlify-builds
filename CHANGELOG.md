@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.2.1 (2024-11-08)
+
+### Bug fixes
+
+- Ensure release is on the commit as the workflow (#757) ([`e317601`](https://github.com/browniebroke/netlify-builds/commit/e3176018ce4e11347d853351379fe733e83c8fd6))
+
 ## v1.2.0 (2024-10-31)
 
 ### Features
