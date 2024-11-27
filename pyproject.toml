@@ -88,6 +88,12 @@ version_toml = [ "pyproject.toml:project.version" ]
 version_variables = [
   "src/netlify_builds/__init__.py:__version__",
 ]
+build_command = """
+pip install uv
+uv lock
+git add uv.lock
+uv build
+"""
 
 [tool.semantic_release.changelog]
 exclude_commit_patterns = [
