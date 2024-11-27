@@ -1,7 +1,6 @@
 tasks:
   - command: |
-      pip install poetry
-      PIP_USER=false poetry install
+      curl -LsSf https://astral.sh/uv/install.sh | sh
   - command: |
       pip install pre-commit
       pre-commit install
