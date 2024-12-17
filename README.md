@@ -40,9 +40,9 @@ A command line utility to check build usage across multiple Netlify accounts
 
 ## Installation
 
-Recommended to install this via [pipx]:
+Recommended to install this via [uv]:
 
-`pipx install netlify-builds`
+`uv tool install netlify-builds`
 
 ## Setup
 
@@ -101,7 +101,7 @@ This project follows the [all-contributors] specification. Contributions of any 
 
 This package was created with [Cookiecutter] and the [browniebroke/cookiecutter-pypackage][bb-cc-pypkg] project template.
 
-[pipx]: https://pipxproject.github.io/pipx/
+[uv]: https://docs.astral.sh/uv/
 [emoji key]: https://allcontributors.org/docs/en/emoji-key
 [all-contributors]: https://github.com/all-contributors/all-contributors
 [cookiecutter]: https://github.com/audreyr/cookiecutter
