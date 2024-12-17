@@ -23,7 +23,7 @@ classifiers = [
 ]
 
 dependencies = [
-  "httpx>=0.17",
+  "httpx>=0.27.2",
   "python-dateutil>=2.8",
   "rich>=10",
 ]
