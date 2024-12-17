@@ -1,6 +1,6 @@
 [project]
 name = "netlify-builds"
-version = "1.2.1"
+version = "1.3.0"
 description = "A command line utility to check build usage across multiple Netlify accounts"
 readme = "README.md"
 license = { text = "MIT" }

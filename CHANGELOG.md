@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.3.0 (2024-12-17)
+
+### Features
+
+- Migrate to uv for package management (#770) ([`064d0f3`](https://github.com/browniebroke/netlify-builds/commit/064d0f3eef309ba6f13a380794e489191e33bd60))
+
 ## v1.2.1 (2024-11-08)
 
 ### Bug fixes

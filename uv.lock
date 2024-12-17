@@ -196,7 +196,7 @@ wheels = [
 
 [[package]]
 name = "netlify-builds"
-version = "1.2.1"
+version = "1.3.0"
 source = { virtual = "." }
 dependencies = [
     { name = "httpx" },
@@ -216,19 +216,19 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "httpx", specifier = ">=0.17.0" },
+    { name = "httpx", specifier = ">=0.17" },
     { name = "python-dateutil", specifier = ">=2.8" },
     { name = "rich", specifier = ">=10" },
 ]
 
 [package.metadata.requires-dev]
 dev = [
-    { name = "pytest", specifier = ">=8.0" },
+    { name = "pytest", specifier = ">=8" },
     { name = "pytest-asyncio", specifier = ">=0.23" },
-    { name = "pytest-cov", specifier = ">=4.0" },
+    { name = "pytest-cov", specifier = ">=4" },
     { name = "pytest-mock", specifier = ">=3.3" },
     { name = "respx", specifier = ">=0.20" },
-    { name = "time-machine", specifier = ">=2.0" },
+    { name = "time-machine", specifier = ">=2" },
 ]
 
 [[package]]
