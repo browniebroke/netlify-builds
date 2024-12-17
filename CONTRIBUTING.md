@@ -50,12 +50,10 @@ Ready to contribute? Here's how to set yourself up for local development.
     $ git clone git@github.com:your_name_here/netlify-builds.git
     ```
 
-3.  Install your local copy into a virtualenv. Assuming you have virtualenvwrapper installed, this is how you set up your fork for local development:
+3.  This project uses [uv](https://docs.astral.sh/uv/) to manage its dependency. Get it first if you don't have it already installed. Then install the project development dependencies:
 
     ```shell
-    $ mkvirtualenv netlify_builds
-    $ cd netlify-builds/
-    $ python setup.py develop
+    $ uv sync
     ```
 
 4.  Create a branch for local development:
@@ -66,15 +64,15 @@ Ready to contribute? Here's how to set yourself up for local development.
 
     Now you can make your changes locally.
 
-5.  When you're done making changes, check that your changes pass flake8 and the tests, including testing other Python versions with tox:
+5.  When you're done making changes, check that your changes pass linting (managed via pre-commit) and the tests, including testing other Python versions with tox:
 
     ```shell
-    $ flake8 netlify_builds tests
+    $ pre-commmit run -a
     $ pytest
     $ tox
     ```
 
-    To get flake8 and tox, pip install them into your virtualenv.
+    To get pre-commit and tox, install them as global tool with uv: `uv tool install...`
 
 6.  Commit your changes and push your branch to GitHub:
 
@@ -84,7 +82,7 @@ Ready to contribute? Here's how to set yourself up for local development.
     $ git push origin name-of-your-bugfix-or-feature
     ```
 
-7.  Submit a pull request through the GitHub website.
+7.  Submit a pull request through GitHub.
 
 ## Pull Request Guidelines
 
@@ -92,7 +90,7 @@ Before you submit a pull request, check that it meets these guidelines:
 
 1.  The pull request should include tests.
 2.  If the pull request adds functionality, the docs should be updated. Put your new functionality into a function with a docstring, and add the feature to the list in README.rst.
-3.  The pull request should work for Python 3.6, 3.7 and 3.8. Check the build and make sure that the tests pass for all supported Python versions.
+3.  The pull request should work for Python all supported Python version. Check the CI build and make sure that the tests pass everywhere.
 
 ## Tips
 
