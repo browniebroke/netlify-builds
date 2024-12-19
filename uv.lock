@@ -197,7 +197,7 @@ wheels = [
 [[package]]
 name = "netlify-builds"
 version = "1.3.0"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
     { name = "httpx" },
     { name = "python-dateutil" },
