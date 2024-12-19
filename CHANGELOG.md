@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## v1.3.1 (2024-12-19)
+
+### Bug fixes
+
+- Add setuptools as build-system (#791) ([`226e74b`](https://github.com/browniebroke/netlify-builds/commit/226e74bf4a20a05171e45d69d2dd755f5a0703af))
+
+### Documentation
+
+- Follow up for uv migration (#787) ([`a935788`](https://github.com/browniebroke/netlify-builds/commit/a93578864b1036d403cf92a143c53dbc6289aed6))
+- Recommend installation using uv ([`fef3bd5`](https://github.com/browniebroke/netlify-builds/commit/fef3bd5c9174d02b009cda6c0df785abf1a7ace3))
+
 ## v1.3.0 (2024-12-17)
 
 ### Features
