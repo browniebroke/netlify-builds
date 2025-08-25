@@ -1,51 +1,61 @@
 # CHANGELOG
 
+## v1.3.2 (2025-08-25)
+
+### Bug fixes
+
+- Use spdx expression for license ([`9cef126`](https://github.com/browniebroke/netlify-builds/commit/9cef12634ae9c9976c6828fcdd15fea90a434442))
+
 ## v1.3.1 (2024-12-19)
 
 ### Bug fixes
 
-- Add setuptools as build-system (#791) ([`226e74b`](https://github.com/browniebroke/netlify-builds/commit/226e74bf4a20a05171e45d69d2dd755f5a0703af))
+- Add setuptools as build-system ([`226e74b`](https://github.com/browniebroke/netlify-builds/commit/226e74bf4a20a05171e45d69d2dd755f5a0703af))
 
 ### Documentation
 
-- Follow up for uv migration (#787) ([`a935788`](https://github.com/browniebroke/netlify-builds/commit/a93578864b1036d403cf92a143c53dbc6289aed6))
+- Follow up for uv migration ([`a935788`](https://github.com/browniebroke/netlify-builds/commit/a93578864b1036d403cf92a143c53dbc6289aed6))
+- Update badge ([`a935788`](https://github.com/browniebroke/netlify-builds/commit/a93578864b1036d403cf92a143c53dbc6289aed6))
+- Update contributing guide ([`a935788`](https://github.com/browniebroke/netlify-builds/commit/a93578864b1036d403cf92a143c53dbc6289aed6))
 - Recommend installation using uv ([`fef3bd5`](https://github.com/browniebroke/netlify-builds/commit/fef3bd5c9174d02b009cda6c0df785abf1a7ace3))
 
 ## v1.3.0 (2024-12-17)
 
 ### Features
 
-- Migrate to uv for package management (#770) ([`064d0f3`](https://github.com/browniebroke/netlify-builds/commit/064d0f3eef309ba6f13a380794e489191e33bd60))
+- Migrate to uv for package management ([`064d0f3`](https://github.com/browniebroke/netlify-builds/commit/064d0f3eef309ba6f13a380794e489191e33bd60))
 
 ## v1.2.1 (2024-11-08)
 
 ### Bug fixes
 
-- Ensure release is on the commit as the workflow (#757) ([`e317601`](https://github.com/browniebroke/netlify-builds/commit/e3176018ce4e11347d853351379fe733e83c8fd6))
+- Ensure release is on the commit as the workflow ([`e317601`](https://github.com/browniebroke/netlify-builds/commit/e3176018ce4e11347d853351379fe733e83c8fd6))
 
 ## v1.2.0 (2024-10-31)
 
 ### Features
 
-- Drop support for python 3.8 (#748) ([`a7bdaba`](https://github.com/browniebroke/netlify-builds/commit/a7bdabaf5752aa1758215154d192dbc6d734ebba))
+- Drop support for python 3.8 ([`a7bdaba`](https://github.com/browniebroke/netlify-builds/commit/a7bdabaf5752aa1758215154d192dbc6d734ebba))
 
 ## v1.1.8 (2024-03-01)
 
 ### Bug fixes
 
-- Update dependency python-dateutil to v2.9.0 (#594) ([`ee66f46`](https://github.com/browniebroke/netlify-builds/commit/ee66f4693fcb7bb66cc93013ac962d787c67a606))
+- Update dependency python-dateutil to v2.9.0 ([`ee66f46`](https://github.com/browniebroke/netlify-builds/commit/ee66f4693fcb7bb66cc93013ac962d787c67a606))
 
 ## v1.1.7 (2024-02-21)
 
 ### Bug fixes
 
-- Widen dependency httpx version restriction (#585) ([`1256934`](https://github.com/browniebroke/netlify-builds/commit/12569345ed37def6d6ada703b59fffd845e3f337))
+- Widen dependency httpx version restriction ([`1256934`](https://github.com/browniebroke/netlify-builds/commit/12569345ed37def6d6ada703b59fffd845e3f337))
+- Update dependency httpx to ^0.27.0 ([`1256934`](https://github.com/browniebroke/netlify-builds/commit/12569345ed37def6d6ada703b59fffd845e3f337))
+- Widen version restrictions ([`1256934`](https://github.com/browniebroke/netlify-builds/commit/12569345ed37def6d6ada703b59fffd845e3f337))
 
 ## v1.1.6 (2023-12-20)
 
 ### Bug fixes
 
-- Update dependency httpx to ^0.26.0 (#550) ([`93d5fbc`](https://github.com/browniebroke/netlify-builds/commit/93d5fbc9bf8cb7f7e6e9baab7af4a826c5ee4630))
+- Update dependency httpx to ^0.26.0 ([`93d5fbc`](https://github.com/browniebroke/netlify-builds/commit/93d5fbc9bf8cb7f7e6e9baab7af4a826c5ee4630))
 
 ## v1.1.5 (2023-11-15)
 
@@ -57,7 +67,7 @@
 
 ### Bug fixes
 
-- Update dependency httpx to v0.25.1 (#527) ([`668611d`](https://github.com/browniebroke/netlify-builds/commit/668611dd44aa10748bef070ffe7c8f897513a008))
+- Update dependency httpx to v0.25.1 ([`668611d`](https://github.com/browniebroke/netlify-builds/commit/668611dd44aa10748bef070ffe7c8f897513a008))
 
 ## v1.1.3 (2023-09-30)
 
@@ -69,19 +79,19 @@
 
 ### Bug fixes
 
-- Update dependency rich to v13.5.3 (#495) ([`d4cd447`](https://github.com/browniebroke/netlify-builds/commit/d4cd447f804fa43444672810e53b99914a8f66fa))
+- Update dependency rich to v13.5.3 ([`d4cd447`](https://github.com/browniebroke/netlify-builds/commit/d4cd447f804fa43444672810e53b99914a8f66fa))
 
 ## v1.1.1 (2023-09-11)
 
 ### Bug fixes
 
-- Update dependency httpx to ^0.25.0 (#488) ([`e43b141`](https://github.com/browniebroke/netlify-builds/commit/e43b141b13bfab5538a94689c9489ff1094556b8))
+- Update dependency httpx to ^0.25.0 ([`e43b141`](https://github.com/browniebroke/netlify-builds/commit/e43b141b13bfab5538a94689c9489ff1094556b8))
 
 ## v1.1.0 (2023-08-07)
 
 ### Features
 
-- Add official support for python 3.12 (#464) ([`360a8d7`](https://github.com/browniebroke/netlify-builds/commit/360a8d7634b2b9a6e021310abe60ecd08d4924d2))
+- Add official support for python 3.12 ([`360a8d7`](https://github.com/browniebroke/netlify-builds/commit/360a8d7634b2b9a6e021310abe60ecd08d4924d2))
 
 ## v1.0.0 (2023-06-27)
 
