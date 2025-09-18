@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## v1.4.0 (2025-09-18)
+
+### Features
+
+- Add support for python 3.14 ([`5b6050f`](https://github.com/browniebroke/netlify-builds/commit/5b6050f8a94306325d6251db9f897df969cba983))
+- Drop support for python 3.9 ([`bd19b25`](https://github.com/browniebroke/netlify-builds/commit/bd19b25cc545f7dbbddc0174291a1acbf60ccf1d))
+
 ## v1.3.2 (2025-08-25)
 
 ### Bug fixes
