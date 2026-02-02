@@ -101,6 +101,12 @@ git add uv.lock
 uv build
 """
 
+[tool.semantic_release.branches.main]
+match = "main"
+
+[tool.semantic_release.branches.noop]
+match = "(?!main$)"
+prerelease = true
 [tool.semantic_release.changelog]
 exclude_commit_patterns = [
   "chore.*",
@@ -110,10 +116,3 @@ exclude_commit_patterns = [
 
 [tool.semantic_release.changelog.environment]
 keep_trailing_newline = true
-
-[tool.semantic_release.branches.main]
-match = "main"
-
-[tool.semantic_release.branches.noop]
-match = "(?!main$)"
-prerelease = true
