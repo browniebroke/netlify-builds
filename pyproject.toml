@@ -83,9 +83,9 @@ lint.isort.known-first-party = [ "netlify_builds", "tests" ]
 max_supported_python = "3.14"
 
 [tool.pytest]
-ini_options.addopts = "-v -Wdefault --cov=src"
-ini_options.pythonpath = [ "src" ]
-ini_options.asyncio_mode = "auto"
+addopts = "-v -Wdefault --cov=src"
+pythonpath = [ "src" ]
+asyncio_mode = "auto"
 
 [tool.semantic_release]
 version_toml = [ "pyproject.toml:project.version" ]
