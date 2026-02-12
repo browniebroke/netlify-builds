@@ -83,7 +83,7 @@ lint.isort.known-first-party = [ "netlify_builds", "tests" ]
 max_supported_python = "3.14"
 
 [tool.pytest]
-addopts = ["-v", "-Wonce", "--cov=netlify_builds"]
+addopts = [ "-v", "-Wonce", "--cov=netlify_builds" ]
 pythonpath = [ "src" ]
 asyncio_mode = "auto"
 
