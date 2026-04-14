@@ -64,7 +64,7 @@ Ready to contribute? Here's how to set yourself up for local development.
 
     Now you can make your changes locally.
 
-5.  When you're done making changes, check that your changes pass linting (managed via pre-commit) and the tests, including testing other Python versions with tox:
+5.  When you're done making changes, check that your changes pass linting (managed via prek) and the tests, including testing other Python versions with tox:
 
     ```shell
     $ pre-commmit run -a
@@ -72,7 +72,7 @@ Ready to contribute? Here's how to set yourself up for local development.
     $ tox
     ```
 
-    To get pre-commit and tox, install them as global tool with uv: `uv tool install...`
+    To get prek and tox, install them as global tool with uv: `uv tool install...`
 
 6.  Commit your changes and push your branch to GitHub:
 
