@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.5.0 (2026-08-07)
+
+### Features
+
+- Add support for python 3.15 ([`5ea61a6`](https://github.com/browniebroke/netlify-builds/commit/5ea61a65615e4ad58fa56d7c6aadf985e19cf72e))
+
 ## v1.4.0 (2025-09-18)
 
 ### Features
