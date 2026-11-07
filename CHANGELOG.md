@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v2.0.0 (2026-11-07)
+
+### Features
+
+- Drop support for python 3.10 ([`0cff7e7`](https://github.com/browniebroke/netlify-builds/commit/0cff7e7e461b8afe4f7794ad71205c9e9c3279e7))
+
 ## v1.5.0 (2026-08-07)
 
 ### Features
